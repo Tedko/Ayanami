@@ -1,4 +1,4 @@
-SELECT blog_content FROM HDATA.weibo_content
+SELECT * FROM HDATA.weibo_content
 WHERE REGEXP_LIKE(blog_content, 
 
   '((
