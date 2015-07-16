@@ -15,7 +15,7 @@ var db = require('./dbquery')({
 	passwd : 'admin123'
 });
 
-var nlp = require('./snownlp/nlp');
+//var nlp = require('./snownlp/nlp');
 
 db.hi();
 
