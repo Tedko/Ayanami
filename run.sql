@@ -9,10 +9,6 @@ a股|交易|现货|市场|原油|股票|中国|投资|个股|风险|股市|做�
 
 ) *){3,}')
 
-AND 
-blog_content NOT LIKE
-
-'%课程%'
 AND
 mid>(SELECT max(mid) FROM HDATA.weibo_content ) *rand()
 LIMIT 1000        
