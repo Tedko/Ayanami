@@ -1,0 +1,13 @@
+# Logs
+logs
+*.log
+
+# DS_Store
+.DS_Store
+
+.metadata
+
+docs/
+
+#npm
+node_modules/
