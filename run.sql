@@ -1,4 +1,4 @@
-SELECT * FROM HDATA.weibo_content
+SELECT uid,mid,blog_content FROM HDATA.weibo_content
 WHERE 
 blog_time LIKE '%2015-06-29%'
 AND
