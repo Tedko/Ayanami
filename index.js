@@ -15,7 +15,8 @@ var db = require('./dbquery')({
 	passwd : 'admin123'
 });
 
-//var nlp = require('./snownlp/nlp');
 
-db.hi();
+db.queryStockRelatedPost('', function (d) {
+	__inspect(d)
+});
 
