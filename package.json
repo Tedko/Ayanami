@@ -1,0 +1,17 @@
+{
+  "name": "167hack",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "node-python": "0.0.4",
+    "sql": "^0.55.0",
+    "vertica": "^0.5.3"
+  }
+}
