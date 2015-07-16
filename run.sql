@@ -10,7 +10,7 @@ a股|交易|现货|市场|原油|股票|中国|投资|个股|风险|股市|做�
 ) *){3,}')
 
 AND
-mid>(SELECT max(mid) FROM HDATA.weibo_content ) *rand()
+mid>(SELECT max(mid) FROM HDATA.weibo_content ) *RANDOM()
 LIMIT 1000        
 ;
  
