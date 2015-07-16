@@ -9,7 +9,7 @@ REGEXP_LIKE(blog_content,
     
 ) *){3,}')
 
-#ORDER BY RANDOM()
+--ORDER BY RANDOM()
 LIMIT 1000        
 ;
  
