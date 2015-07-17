@@ -6,7 +6,7 @@ sed -e 's!http\(s\)\{0,1\}://[^[:space:]]*!!g' output_trainingData.txt >output_t
 echo 'Deleting all URLs...'
 tr ' ' '\n'< output_trainingData_noURL.txt > output_trainingData_lined.txt 
 sed '/^$/d' output_trainingData_lined.txt > output_trainingData_pure.txt #del blank line
-sed '/^-/d' output_trainingData_pure.txt  >output_trainingData_pure1.txt
+sed '/^-/d' output_trainingData_pure.txt  >output_trainingData_pure1.txt #del '-'
 echo 'Purifing Data...'
 #rm output_trainingData.txt 
 rm output_trainingData_noURL.txt
@@ -23,7 +23,7 @@ sort output_ProcessSameLine.txt|uniq -c  > output_withSameLineNumber.txt
 sort output_withSameLineNumber.txt > output_final.txt
 rm output_withSameLineNumber.txt
 
-echo ' Chinese Porter Stemmer result is in the output_final.txt'
+echo ' Chinese Porter Stemmer result is in the output_final.txt :)'
 
 
 
