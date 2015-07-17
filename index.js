@@ -14,9 +14,14 @@ var db = require('./dbquery')({
 	user : 'dbadmin',
 	passwd : 'admin123'
 });
-
+var sentiment = require('./sentiment');
 
 db.queryStockRelatedPost('', function (d) {
 	__inspect(d)
 });
+sentiment.test("我了个大叉", function (s) {
+	__inspect(s);
+})
+
+
 
