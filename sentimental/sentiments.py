@@ -13,7 +13,7 @@ while(True):
     else:
         sentence = json.loads(sentence.decode('utf-8'))
         #li_score = json.dumps([snow.SnowNLP(sentence['text']).sentiments, sentence['id']])
-        li_score = json.dumps([snow.SnowNLP(sentece[0]).sentiments, sentence[1]])
+        li_score = json.dumps([snow.SnowNLP(sentence[1]).sentiments, sentence[0]])
         output.write(li_score)
         output.write('\n')
         print li_score
