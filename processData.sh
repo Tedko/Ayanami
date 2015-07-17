@@ -2,14 +2,17 @@
 
 
 sed -e 's!http\(s\)\{0,1\}://[^[:space:]]*!!g' output_trainingData.txt >output_trainingData_noURL.txt
+#Http RegExp
 echo 'Deleting all URLs...'
-tr ' ' '\n'< output_trainingData_noURL.txt > output_trainingData_lined.txt
-sed '/^$/d' output_trainingData_lined.txt > output_trainingData_pure.txt
+tr ' ' '\n'< output_trainingData_noURL.txt > output_trainingData_lined.txt 
+sed '/^$/d' output_trainingData_lined.txt > output_trainingData_pure.txt #del blank line
+sed '/^-/d' output_trainingData_pure.txt  >output_trainingData_pure1.txt
 echo 'Purifing Data...'
 #rm output_trainingData.txt 
 rm output_trainingData_noURL.txt
-rm output_trainingData_lined.txt 
-mv  output_trainingData_pure.txt input.txt
+rm output_trainingData_lined.txt
+rm output_trainingData_pure.txt
+mv  output_trainingData_pure1.txt input.txt
 echo 'Run node go.js for Chinese Porter Stemmer...'
 node go.js
 sed '/^error/d' output.txt >output_pure.txt
