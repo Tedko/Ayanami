@@ -6,5 +6,6 @@ The data for traing our program is provided by Sina Weibo, powered bu Hp's Verti
 
 ```bash
 ssh [user]@[url]
-vsql -f run.sql
+git clone 'https://github.com/Tedko/Ayanami.git'
+./start.sh
 ```
