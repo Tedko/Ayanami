@@ -2,7 +2,8 @@
 
 ##Usage/使用
 
-The data for traing our program is provided by Sina Weibo, powered bu Hp's Vertica database
+The data for training our program is provided by Sina Weibo, powered by Hp's Vertica database
+**The database is down now**
 
 ```bash
 ssh [user]@[url]
